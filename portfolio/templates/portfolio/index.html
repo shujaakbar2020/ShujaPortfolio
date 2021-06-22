@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/work.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/portfolio.style.css' %}">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -177,110 +178,59 @@
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-
-                        <img src="{%  static 'assets/img/scrape-amazon-reviews.png' %}" alt="">
-                        <p style="text-align: center; margin-top:20px;">Amazon Woo-Extractor</p>
+<div class="container">
+                    <div class="content-section-heading text-center">
+                        <h3 class="text-secondary mb-0">Portfolio</h3>
+                        <h2 class="mb-5">Recent Projects</h2>
                     </div>
-                    <div class="work__img">
-                        <img src="{%  static 'assets/img/work1.jpg' %}" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="{% static 'assets/img/work2.jpg' %}" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="{% static 'assets/img/work3.jpg' %}" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="{% static 'assets/img/work4.jpg' %}" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="{% static 'assets/img/work5.jpg' %}" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="{% static 'assets/img/work6.jpg' %}" alt="">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Amazon to Woo-Extractor</div>
+                                        <p class="mb-0">This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce.</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Amazon to Woo-Extractor</div>
+                                        <p class="mb-0">This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce.</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio-2.jpg' %}" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Strawberries</div>
+                                        <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio-3.jpg' %}" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <div class="h2">Workspace</div>
+                                        <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/img/portfolio-4.jpg' %}" alt="..." />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <div class="container">
-                <div class="row">
-                    <div class='col-4'>
-                        <div class='box'>
-                            <img class="img-fluid justify-content-left" src="{% static 'assets/img/scrape-amazon-reviews.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <br>
-                        <h4 class="justify-content-center align-items-center justify-content-center">Amazon to Woo-Extractor</h4>
-                        <p>This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce. This software use a Woo-Commerce REST-APIs to pull the data into Woo-Commerce database.</p>
-                        <br>
-                        <a href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">Link to Github.com</a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class='col-4'>
-                        <div class='box'>
-                            <img class="img-fluid justify-content-left" src="{% static 'assets/img/work1.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <br>
-                        <h4 class="justify-content-center align-items-center justify-content-center">Amazon to Woo-Extractor</h4>
-                        <p>This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce. This software use a Woo-Commerce REST-APIs to pull the data into Woo-Commerce database.</p>
-                        <br>
-                        <a href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">Link to Github.com</a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class='col-4'>
-                        <div class='box'>
-                            <img class="img-fluid justify-content-left" src="{% static 'assets/img/work2.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <br>
-                        <h4 class="justify-content-center align-items-center justify-content-center">Amazon to Woo-Extractor</h4>
-                        <p>This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce. This software use a Woo-Commerce REST-APIs to pull the data into Woo-Commerce database.</p>
-                        <br>
-                        <a href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">Link to Github.com</a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class='col-4'>
-                        <div class='box'>
-                            <img class="img-fluid justify-content-left" src="{% static 'assets/img/work3.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <br>
-                        <h4 class="justify-content-center align-items-center justify-content-center">Amazon to Woo-Extractor</h4>
-                        <p>This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce. This software use a Woo-Commerce REST-APIs to pull the data into Woo-Commerce database.</p>
-                        <br>
-                        <a href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">Link to Github.com</a>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class='col-4'>
-                        <div class='box'>
-                            <img class="img-fluid justify-content-left" src="{% static 'assets/img/work4.jpg' %}" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <br>
-                        <h4 class="justify-content-center align-items-center justify-content-center">Amazon to Woo-Extractor</h4>
-                        <p>This is Amazon Products date Extractor. This System software extract or scrape the products data from Amazon.com and upload it to Woo-Commerce. This software use a Woo-Commerce REST-APIs to pull the data into Woo-Commerce database.</p>
-                        <br>
-                        <a href="https://github.com/shujaakbar2020/Amazon-Woo-Extractor">Link to Github.com</a>
-                    </div>
-                </div>
-            </div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -295,6 +245,8 @@
                     </form>
                 </div>
             </section>
+
+        <!-- Call to Action-->
         </main>
 
         <!--===== FOOTER =====-->
