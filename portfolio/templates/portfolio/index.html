@@ -247,13 +247,23 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <!-- <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li> -->
+                            <div class="alert {{message.tags}} alert-dismissible fade show" role="alert">
+                              <strong>{{ message }}</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <form method="POST" action="" class="contact__form">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Name" class="contact__input" name="full_name">
+
+                        <input type="mail" placeholder="Email" class="contact__input" name="email">
+                        <textarea type="text" name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
